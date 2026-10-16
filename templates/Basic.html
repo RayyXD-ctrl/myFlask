@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Universitas Teknologi Yogyakarta</title>
+
+    <style>
+
+        /* Mengatur seluruh halaman */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            padding: 0;
+            background-color: white;
+        }
+
+
+        /* Tempat logo dan gambar gedung */
+        .gambar {
+            display: flex;
+            align-items: center;
+
+            /* Gambar mulai dari sebelah kiri */
+            justify-content: flex-start;
+
+            /* Jarak logo dengan gambar gedung */
+            gap: 20px;
+        }
+
+
+        /* Logo UTY */
+        .logo {
+            width: 200px;
+            height: 160px;
+
+            /* Supaya gambar tidak gepeng */
+            object-fit: contain;
+        }
+
+
+        /* Foto gedung UTY */
+        .gedung {
+            width: 300px;
+            height: 160px;
+
+            /* Supaya foto tidak gepeng */
+            object-fit: cover;
+        }
+
+
+        /* Bagian informasi */
+        article {
+            margin-top: 20px;
+        }
+
+
+        article h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+
+        article p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+
+        /* Agar rapi ketika dibuka di HP */
+        @media (max-width: 600px) {
+
+            .gambar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .logo {
+                width: 180px;
+                height: auto;
+            }
+
+            .gedung {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- Bagian gambar -->
+    <div class="gambar">
+
+
+        <!-- Logo UTY -->
+        <img
+            class="logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/UTY.jpg"
+            alt="Logo Universitas Teknologi Yogyakarta"
+        >
+
+
+        <!-- Foto Gedung UTY -->
+        <img
+            class="gedung"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbCv54-QBlRC20AkfYwe02KDPauWPeitZyAanZQh-zmRCq76-TI6Zu1jH8&s=10"
+            alt="Gedung Universitas Teknologi Yogyakarta"
+        >
+
+
+    </div>
+
+
+
+    <!-- Bagian Informasi -->
+    <article>
+
+        <h1>Informasi</h1>
+
+        <p>
+            Ilmu yang mempelajari perancangan, pengembangan,
+            serta penerapan sistem komputasi untuk mengolah data
+            dan memecahkan berbagai permasalahan nyata
+            menggunakan teknologi.
+        </p>
+
+    </article>
+
+
+</body>
+
+</html>
